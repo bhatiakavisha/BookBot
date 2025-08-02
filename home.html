@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recommendations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .book-card {
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: scale(1.03);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .book-content {
+      padding: 20px;
+    }
+
+    .book-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .book-description {
+      font-size: 14px;
+      color: #e0e0e0;
+      margin-bottom: 15px;
+    }
+
+    .book-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 BookBot Recommendations</h1>
+  <p class="subtitle">Your handpicked list of popular and motivational reads</p>
+
+  <div class="book-grid">
+    <!-- Book 1 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits">
+      <div class="book-content">
+        <div class="book-title">Atomic Habits</div>
+        <div class="book-description">A practical guide to building good habits and breaking bad ones by James Clear.</div>
+        <div class="book-price">₹499</div>
+              <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+
+      </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="The Alchemist">
+      <div class="book-content">
+        <div class="book-title">The Alchemist</div>
+        <div class="book-description">A mystical tale of Santiago’s journey to discover his Personal Legend.</div>
+        <div class="book-price">₹399</div>
+                      <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+      </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Ikigai">
+      <div class="book-content">
+        <div class="book-title">Ikigai</div>
+        <div class="book-description">Explore the Japanese secret to a long and happy life. A must-read lifestyle book.</div>
+        <div class="book-price">₹299</div>
+                              <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+      </div>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Rich Dad Poor Dad">
+      <div class="book-content">
+        <div class="book-title">Rich Dad Poor Dad</div>
+        <div class="book-description">Robert Kiyosaki shares what the rich teach their kids about money — that the poor and middle class do not.</div>
+        <div class="book-price">₹350</div>
+                              <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+      </div>
+    </div>
+
+    <!-- Book 5 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71zytzrg6lL.jpg" alt="Think Like a Monk">
+      <div class="book-content">
+        <div class="book-title">Think Like a Monk</div>
+        <div class="book-description">Jay Shetty shares timeless wisdom to reduce stress and find peace and purpose.</div>
+        <div class="book-price">₹450</div>
+                              <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+      </div>
+    </div>
+
+    <!-- Book 6 -->
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg" alt="Harry Potter">
+      <div class="book-content">
+        <div class="book-title">Harry Potter & the Philosopher's Stone</div>
+        <div class="book-description">Begin your magical journey at Hogwarts with Harry, Hermione, and Ron.</div>
+        <div class="book-price">₹699</div>
+                              <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+
+      </div>
+    </div>
+    <!-- Book 7 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/71KilybDOoL.jpg" alt="The Power of Now">
+  <div class="book-content">
+    <div class="book-title">The Power of Now</div>
+    <div class="book-description">Eckhart Tolle explores mindfulness and living in the present to achieve spiritual enlightenment.</div>
+    <div class="book-price">₹430</div>
+
+                              <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+<!-- Book 8 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/71UwSHSZRnS.jpg" alt="The Subtle Art">
+  <div class="book-content">
+    <div class="book-title">The Subtle Art of Not Giving a F*ck</div>
+    <div class="book-description">Mark Manson offers a refreshing slap for a generation to help lead contented, grounded lives.</div>
+    <div> class="book-price">₹375</div>
+                                  <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+<!-- Book 9 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg" alt="To Kill a Mockingbird">
+  <div class="book-content">
+    <div class="book-title">To Kill a Mockingbird</div>
+    <div class="book-description">Harper Lee's Pulitzer-winning novel of race, justice, and moral growth in the Deep South.</div>
+    <div class="book-price">₹299</div>
+                                  <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+<!-- Book 10 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/81rttmnkH6L.jpg" alt="1984 by George Orwell">
+  <div class="book-content">
+    <div class="book-title">1984</div>
+    <div class="book-description">George Orwell’s dystopian masterpiece about totalitarianism and surveillance.</div>
+    <div class="book-price">₹349</div>
+                                      <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+<!-- Book 11 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="Sapiens">
+  <div class="book-content">
+    <div class="book-title">Sapiens: A Brief History of Humankind</div>
+    <div class="book-description">Yuval Noah Harari explores how Homo sapiens came to dominate Earth’s ecosystem.</div>
+    <div class="book-price">₹529</div>
+                                          <div class="book-rating">⭐️⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+<!-- Book 12 -->
+<div class="book-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/91dSMhdIzTL.jpg" alt="The Psychology of Money">
+  <div class="book-content">
+    <div class="book-title">The Psychology of Money</div>
+    <div class="book-description">Morgan Housel breaks down how people think about money with stories and insights.</div>
+    <div class="book-price">₹410</div>
+                                              <div class="book-rating">⭐️⭐️⭐️⭐️</div>
+
+  </div>
+</div>
+
+  </div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "78d3cfd4-2c76-44f4-96e8-f653152e1e70", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6d14bcea-c98d-4e6e-87e6-b6c38ca135e6", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+<div class="watson-corner">
+  <span class="arrow">↑</span> Powered by <strong>IBM Watson Assistant</strong>
+</div>
+
+
+</body>
+</html>

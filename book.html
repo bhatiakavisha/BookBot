@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookBot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .logo {
+      font-size: 60px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      font-size: 15px;
+      line-height: 1.4;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      background: white;
+      color: #0072ff;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+
+    .quote-box {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      width: 280px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      line-height: 1.5;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      animation: fadeInQuote 3s ease forwards;
+      animation-delay: 2s;
+    }
+
+    .quote-box span {
+      font-size: 13px;
+      color: #ddd;
+      display: block;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInQuote {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">BookBot</div>
+    <div class="tagline">Your personal AI companion for discovering great books 📚</div>
+
+    <div class="features">
+      <div class="feature">🤖 AI-powered book recommendations based on your mood</div>
+      <div class="feature">📈 View ratings, reviews & prices instantly</div>
+      <div class="feature">🎯 Fiction, Non-fiction, Poetry, Self-help & more</div>
+    </div>
+
+    <a href="home.html"><button class="btn">Start Exploring</button></a>
+  </div>
+
+</body>
+</html>

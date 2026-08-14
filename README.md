@@ -14,7 +14,7 @@ BookBot is an intelligent, mood-aware chatbot that suggests the perfect book bas
 👉 BookBot bridges that gap—offering empathy-driven book recommendations through AI.
 
 
-✨ Key Features
+✨ Key Features-
 
 - 💬 Conversational Interface– Chat like you would with a book-loving friend  
 - 😊 Mood-Based Recommendations– Feeling happy, sad, or adventurous? BookBot gets it  
@@ -24,7 +24,7 @@ BookBot is an intelligent, mood-aware chatbot that suggests the perfect book bas
 - 🚀 Scalable with Watson– Easy to improve and extend with IBM Watson tools
 
 
-🛠️ Tech Stack
+🛠️ Tech Stack-
 
 | Component       | Technology                |
 |----------------|----------------------------|
@@ -32,8 +32,7 @@ BookBot is an intelligent, mood-aware chatbot that suggests the perfect book bas
 | AI Assistant    | IBM Watson Assistant       |
 
 
-🧠 How It Works
-
+🧠 How It Works-
 1. User initiates a chat
 2. BookBot asks for mood or genre
 3. Recommends relevant books based on input.
